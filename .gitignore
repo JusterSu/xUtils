@@ -26,3 +26,6 @@ local.properties
 ant.properties
 build.xml
 META-INF
+
+#mac folder
+*.DS_Store
