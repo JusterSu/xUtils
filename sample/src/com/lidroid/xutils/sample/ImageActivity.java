@@ -51,13 +51,13 @@ public class ImageActivity extends Activity {
             @Override
             public void onLoadStarted(ImageView container, String uri, BitmapDisplayConfig config) {
                 super.onLoadStarted(container, uri, config);
-                Toast.makeText(getApplicationContext(), uri, 300).show();
+                Toast.makeText(getApplicationContext(), uri, Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onLoadCompleted(ImageView container, String uri, Bitmap bitmap, BitmapDisplayConfig config, BitmapLoadFrom from) {
                 super.onLoadCompleted(container, uri, bitmap, config, from);
-                Toast.makeText(getApplicationContext(), bitmap.getWidth() + "*" + bitmap.getHeight(), 300).show();
+                Toast.makeText(getApplicationContext(), bitmap.getWidth() + "*" + bitmap.getHeight(), Toast.LENGTH_SHORT).show();
             }
         };
 
